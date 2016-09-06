@@ -5,35 +5,49 @@
 
 body {
     background-color: #dad4c5;
+    display: flex;
+    height: 100%;
 }
 
 p {
     color: red;
 }
 
+#teapic {
+    background: url(./img/startpic.png);
+    width: 1084px;
+    height: 563px;
+    margin: auto;
+    display: flex;
+}
+
+#teapic a {
+    display: block;
+    width: 241px;
+    height: 241px;
+    background: url(./img/startbutton.png) no-repeat center;
+    background-size: 239px;
+    margin: auto;
+    transition: transform 0.5s;
+}
+
+#teapic a:hover {
+    transform: rotateX(180deg);
+    transition: transform 0.5s;
+}
 
 a {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 242px;
-    height: 242px;
-}
-
-#teapic {
-    position: absolute;
-    top: 50%;
-    left: 51.5%;
-    transform: translate(-50%, -50%);
-}
-
-a:hover img {
-    width: 140%;
-    height: 140%;
-}
-
-a{
     cursor: pointer;
 }
 
+footer {
+    position: absolute;
+    font-size: 20px;
+    font-family: Calibri;
+    bottom:120px;
+    margin-left:30%;
+}
+
+p{
+    color:white;
+}
