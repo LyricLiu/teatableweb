@@ -11,29 +11,34 @@ p {
     color: red;
 }
 
-
-a {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 242px;
-    height: 242px;
-}
-
 #teapic {
-    position: absolute;
-    top: 50%;
-    left: 51.5%;
-    transform: translate(-50%, -50%);
+    background: url(./img/startpic.png);
+    width: 1117px;
+    height: 563px;
+    margin: auto;
+    display: flex;
 }
 
-a:hover img {
-    width: 140%;
-    height: 140%;
+#teapic a {
+    display: block;
+    width: 241px;
+    height: 241px;
+    background: url(./img/startbutton.png);
+    background-size: cover;
+    margin: auto;
+    transition: transform 1s;
 }
 
-a{
-    cursor: pointer;
+#teapic a:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
 }
 
+/**
+ * 1. 鼠标放上去没反应的原因：你把链接图片放到了背景图的下面，背景图把链接盖住了，鼠标根本没机会 hover
+ * 2. DOM 元素还是冗余，我帮你优化了一下
+ * 3. 如果不考虑兼容性，垂直居中还是 flex 最好，简单粗暴
+ * 4. 这里的放大是一个 CSS3 里常用的动画手法，好好看看
+ *
+ * P.S. 素材图圆孔挖的位置貌似不是很居中，你自己调整下
+ */
