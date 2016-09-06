@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dad4c5;
+}
+
+p {
+    color: red;
+}
+
+
+a {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 242px;
+    height: 242px;
+}
+
+#teapic {
+    position: absolute;
+    top: 50%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+}
+
+a:hover img {
+    width: 140%;
+    height: 140%;
+}
+
+a{
+    cursor: pointer;
+}
+
