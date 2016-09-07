@@ -76,8 +76,93 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 body{
 	margin:30px;
-  background: #7fa19b url(img/text1.png) repeat;
+  background-color: #dad4c5;
+	font-family:Calibri;
+	font-size:20px;
+	color:#515776;
 }
+
+#items{
+	border-left: 2px solid white;
+	padding-left:10px;
+}
+
+#askForTea{width:500px;}
+
+#enterName {
+    float: left;
+    display: inline-block;
+    margin: 25px 40px;
+    width: 500px;
+    font-size: 20px;
+    color:#525775;
+    font-family: Calibri;
+}
+
+#peoplePic{
+	float:left;
+}
+
+#peoplePic div {
+    float: left;
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.5s;
+}
+
+#peoplePic :nth-child(2){
+	margin: 0 40px 0 20px;
+}
+#peoplePic :nth-child(1){
+	margin-top: 8px;
+}
+#peoplePic :nth-child(3){
+	margin-top: 3px;
+}
+
+#peoplePic label {
+    display: block;
+    text-align: center;
+    margin-top:20px;
+    padding:3px 10px;
+    font-family: Bookman Old Style;
+    font-size: 24px;
+    color:#2d2350;
+}
+
+#peoplePic :nth-child(3) label{
+	text-align: left;
+}
+
+#peoplePic img{
+	margin-bottom: 20px;
+}
+
+#peoplePic div:hover img{
+	transform: scale(1.02, 1.02);
+    transition: transform 0.5s;
+}
+
+#peoplePic div:hover label{
+	background-color: #bfac9e;
+}
+
+#peoplePic div:active label{
+	background-color: #bfac9e;
+}
+
+#addPeople{
+	margin-top:30px;
+	color:#9d878f;
+	font-family: Baskerville Old Face;
+	border-top:1px solid #bfac9e;
+	padding-top: 20px;
+}
+
+#selectP{
+	margin-top: 40px;
+}
+
 
 
     
@@ -85,15 +170,43 @@ body{
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="askForTea" tags="askForTea" position="188,194">You sit at the tea table with Mr Wang who is a merchant selling silk from south of the Yangtze River to central plains.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+        var selectPeople;
+        function addword(x){
+        	var a = document.getElementById("addPeople");
+        	a.innerHTML = x;
+        }
+        function deleteword(){
+        	var a = document.getElementById("addPeople");
+        	a.innerHTML = "";
+        }
+        function selectPeople(x){
+        	selectPeople = x;
+        	var self = document.getElementById("addPeople");
+        	var parent = self.parentElement;
+        	var removed = parent.removeChild(self);
+        	var b = document.getElementById("selectP");
+        	if(x == 'b'){
+        		b.innerHTML = "Alright, your guest comes.[[Cook a tea for him|askForTea]]";
+        	}else{
+        		b.innerHTML = "Alright, your guest comes.[[Cook a tea for her|askForTea]]";
+        	}
+        	
+        }
+
+
+</script><tw-passagedata pid="1" name="askForTea" tags="askForTea" position="185,190">&lt;p id=&quot;askForTea&quot;&gt;
+You sit at the tea table with Mr Li who is a merchant selling silk from south of the Yangtze River to central plains.
 &#39;How about a cup of tea&#39; you ask.
 &#39;Sure&#39; he replied with a hand obeisance.
+&lt;/p&gt;
 
 [[turn to heating stove|stove]]
-[[turn to tea box|teaBox]]</tw-passagedata>
-<tw-passagedata pid="2" name="StoryInit" tags="" position="495,223">/* define variables */
+[[turn to tea box|teaBox]]
+
+</tw-passagedata>
+<tw-passagedata pid="2" name="StoryInit" tags="" position="456,192">/* define variables */
 &lt;&lt;set $color to 0&gt;&gt;
 &lt;&lt;set $flavor to 0&gt;&gt;
 &lt;&lt;set $taste to 0&gt;&gt;
@@ -104,7 +217,8 @@ body{
 &lt;&lt;set $chaHu to false&gt;&gt;
 &lt;&lt;set $preTea to false&gt;&gt;
 &lt;&lt;set $firstTea to false&gt;&gt;
-&lt;&lt;set $secondTea to false&gt;&gt;</tw-passagedata>
+&lt;&lt;set $secondTea to false&gt;&gt;
+&lt;&lt;set $itemsCollected to &quot;&quot;&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="3" name="stove" tags="" position="190,336">You fill a pottery kattle with well water and gently place it on the heating stove.
 &#39;Just a couple minutes, sir&#39; you say.
 &#39;Nevermind&#39; Mr Li smile with his eye fixed on the kattle,&#39;What an exquisite kattle, where did you get it?&#39;
@@ -158,7 +272,7 @@ Then you turn to Cha Chuang(Tea Preparation Tray) and get two Pin [[Ming bei(Dri
 &lt;&lt;/if&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="8" name="drinkingCup" tags="" position="340,636">&#39;Have a taste, please.&#39;you handed the tea to Mr Li respectfully.
 </tw-passagedata>
-<tw-passagedata pid="9" name="preTea" tags="" position="490,637">You warm the Cha Hai(Pouring Teapot) and Pin Ming Bei(Drinking cup) with all the first tea, and then drop the tea out.
+<tw-passagedata pid="9" name="preTea" tags="" position="491,635">You warm the Cha Hai(Pouring Teapot) and Pin Ming Bei(Drinking cup) with all the first tea, and then drop the tea out.
 Then you refill Cha Hu(Brewing Teapot) with hot water.
 &#39;Why are you drop the first tea?&#39; Mr Li ask.
 &#39;Clean the tea-leaves and warm the drinking cup as well.&#39; you say while pour the second tea water into 
@@ -167,6 +281,11 @@ Then you refill Cha Hu(Brewing Teapot) with hot water.
 
 
 </tw-passagedata>
+<tw-passagedata pid="10" name="Aside" tags="" position="586,192">&lt;&lt;nobr&gt;&gt;
+&lt;span id=&quot;items&quot;&gt;
+Your items:
+&lt;/span&gt;
+&lt;&lt;endnobr&gt;&gt;</tw-passagedata>
 </tw-storydata>
 </div>
 	<script id="script-sugarcube" type="text/javascript">

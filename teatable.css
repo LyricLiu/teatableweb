@@ -7,6 +7,7 @@ body {
     background-color: #dad4c5;
     display: flex;
     height: 100%;
+    min-width: 1100px;
 }
 
 p {
@@ -15,8 +16,8 @@ p {
 
 #teapic {
     background: url(./img/startpic.png);
-    width: 1084px;
-    height: 563px;
+    width: 1087px;
+    height: 600px;
     margin: auto;
     display: flex;
 }
@@ -25,13 +26,14 @@ p {
     display: block;
     width: 241px;
     height: 241px;
-    background: url(./img/startbutton.png) no-repeat center;
+    background: url(./img/startbutton1.png) no-repeat center;
     background-size: 239px;
     margin: auto;
     transition: transform 0.5s;
 }
 
 #teapic a:hover {
+    background: url(./img/startbutton2.png) no-repeat center;
     transform: rotateX(180deg);
     transition: transform 0.5s;
 }
@@ -40,14 +42,17 @@ a {
     cursor: pointer;
 }
 
-footer {
+section {
     position: absolute;
+    float: left;
     font-size: 20px;
     font-family: Calibri;
-    bottom:120px;
-    margin-left:30%;
+    top: 610px;
+    margin-left:12px;
+
 }
 
-p{
-    color:white;
+p {
+    color: #c1ac9e;
 }
+#small{font-size: 16px;}
