@@ -1,0 +1,78 @@
+* {
+    background-color: #dad4c5;
+}
+
+#enterName {
+    float: left;
+    display: inline-block;
+    margin: 25px 40px;
+    width: 500px;
+    font-size: 20px;
+    color:#525775;
+    font-family: Calibri;
+}
+
+#peoplePic{
+	float:left;
+}
+
+#peoplePic div {
+    float: left;
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.5s;
+}
+
+#peoplePic :nth-child(2){
+	margin: 0 40px 0 20px;
+}
+#peoplePic :nth-child(1){
+	margin-top: 8px;
+}
+#peoplePic :nth-child(3){
+	margin-top: 3px;
+}
+
+#peoplePic label {
+    display: block;
+    text-align: center;
+    margin-top:20px;
+    padding:3px 10px;
+    font-family: Bookman Old Style;
+    font-size: 24px;
+    color:#2d2350;
+}
+
+#peoplePic :nth-child(3) label{
+	text-align: left;
+}
+
+#peoplePic img{
+	margin-bottom: 20px;
+}
+
+#peoplePic div:hover img{
+	transform: scale(1.02, 1.02);
+    transition: transform 0.5s;
+}
+
+#peoplePic div:hover label{
+	background-color: #bfac9e;
+}
+
+#peoplePic div:active label{
+	background-color: #bfac9e;
+}
+
+#addPeople{
+	margin-top:30px;
+	color:#9d878f;
+	font-family: Baskerville Old Face;
+	border-top:1px solid #bfac9e;
+	padding-top: 20px;
+}
+
+#selectP{
+	margin-top: 40px;
+}
+
