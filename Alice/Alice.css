@@ -24,12 +24,38 @@ a:hover{
 	background-color: #bfac9e;
 }
 
-#aText{
+.Text{
 	float:left;
 	width:600px;
 	margin:50px;
 }
 
-#aText p{
+.Text p{
 	margin-bottom: 20px;
+}
+
+.bigImage{
+	float:left;
+}
+
+.btext{
+	font-size: 18px;
+	width:500px;
+	margin-right: 0;
+}
+
+.btext :nth-child(1){
+	width:720px;
+}
+
+.btext :nth-child(2){
+	width:650px;
+}
+
+.btext :nth-child(3){
+	width:560px;
+}
+
+.bimg{
+	margin-top: 30px;
 }
