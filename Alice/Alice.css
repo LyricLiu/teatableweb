@@ -41,7 +41,6 @@ a:hover{
 .btext{
 	font-size: 18px;
 	width:500px;
-	margin-right: 0;
 }
 
 .btext :nth-child(1){
@@ -57,5 +56,5 @@ a:hover{
 }
 
 .bimg{
-	margin-top: 30px;
+	margin-top: 50px;
 }
