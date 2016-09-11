@@ -24,37 +24,71 @@ a:hover{
 	background-color: #bfac9e;
 }
 
-.Text{
+aside{
+	width:180px;
+	float:right;
+	right:0;
+	height:auto;
+	border-left: 3px solid #525775;
+	margin:5px 0;
+}
+
+aside p {
+	margin:10px;
+	font-family: Copperplate Gothic Bold;
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+
+#add{
+	text-align: center;
+}
+
+section{
 	float:left;
-	width:600px;
-	margin:50px;
+	width:calc(100% - 180px);
+}
+
+.Text{
+	margin:30px 10px;
 }
 
 .Text p{
 	margin-bottom: 20px;
+	margin-left:20px;
 }
 
+.btext{
+	float:left;
+}
+.btext p{
+	width:calc(100% - 350px);
+}
+
+.btext :nth-child(2){
+	width:calc(100% - 450px);
+}
+
+.btext :nth-child(3){
+	width:calc(100% - 500px);
+}
+.btext :nth-child(4){
+	width:calc(100% - 530px);
+}
+.btext :nth-child(5){
+	width:calc(100% - 600px);
+}
 .bigImage{
 	float:left;
 }
 
 .btext{
+	padding-top:30px;
 	font-size: 18px;
-	width:500px;
 }
 
-.btext :nth-child(1){
-	width:720px;
-}
-
-.btext :nth-child(2){
-	width:650px;
-}
-
-.btext :nth-child(3){
-	width:560px;
-}
 
 .bimg{
-	margin-top: 50px;
+	position: fixed;
+	right:180px;
 }
