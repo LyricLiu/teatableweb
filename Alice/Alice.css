@@ -27,17 +27,17 @@ a:hover{
 aside{
 	width:180px;
 	float:right;
+	position: absolute;
 	right:0;
 	height:auto;
 	border-left: 3px solid #525775;
-	margin:5px 0;
+	background-color: #ebe7df;
 }
 
 aside p {
-	margin:10px;
+	margin:20px 10px;
 	font-family: Copperplate Gothic Bold;
-	font-size: 19px;
-	margin-bottom: 20px;
+	font-size: 19px; 
 }
 
 #add{
@@ -47,6 +47,8 @@ aside p {
 section{
 	float:left;
 	width:calc(100% - 180px);
+	height:100%;
+	position:fixed;
 }
 
 .Text{
@@ -56,6 +58,13 @@ section{
 .Text p{
 	margin-bottom: 20px;
 	margin-left:20px;
+}
+
+.Text div{
+	margin-top:40px;
+}
+.btext div a{
+	margin:0px 20px;
 }
 
 .btext{
@@ -92,3 +101,12 @@ section{
 	position: fixed;
 	right:180px;
 }
+
+.ctext{
+	margin-right:50px;
+	margin-top:70px;
+}
+
+
+
+
