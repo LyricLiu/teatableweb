@@ -1,5 +1,6 @@
     var getTea = false;
     var getStove = false;
+    var getDesert = false;
 
     var br1 = document.createElement('br');
 var br2 = document.createElement('br');
