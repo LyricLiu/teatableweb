@@ -50,9 +50,20 @@ aside p{
 	margin:10px 10px;
 }
 
+#click-item{
+	text-decoration: underline;
+	color:#584764;
+	font-size: 20px;
+	cursor:pointer;
+}
+
 #add{
 	text-align: center;
 	margin-top:65px;
+}
+
+#alreadyAdd{
+	text-align: center;
 }
 
 section{
@@ -116,6 +127,14 @@ section{
 .ctext{
 	margin-right:50px;
 	margin-top:50px;
+}
+
+.dtext{
+	float:left;
+	margin-top: 60px;
+}
+.dtext p{
+	width:calc(100% - 600px);
 }
 
 
