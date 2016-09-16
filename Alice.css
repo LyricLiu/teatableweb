@@ -13,6 +13,43 @@ body{
     color:#5d5d5d;
 }
 
+#askForTea{
+	display:block;
+}
+
+#stove{
+	display: none;
+}
+
+#stove1{
+	display: none;
+}
+
+#stove2{
+	display: none;
+}
+
+#teaBox{
+	display:none;
+}
+
+#chaHu{
+	display:none;
+}
+
+#chaHu1{
+	display:none;
+}
+
+#chaHu2{
+	display:none;
+}
+
+#warmCup{
+	display: none;
+}
+
+
 a{
 	color:#525775;
 	text-decoration: none;
@@ -131,10 +168,22 @@ section{
 
 .dtext{
 	float:left;
-	margin-top: 60px;
 }
 .dtext p{
 	width:calc(100% - 600px);
+}
+
+#chaHu1 p{
+	width:500px;
+	margin-left:100px;
+	margin-top: 200px;
+}
+#chaHu1 a{
+	margin-left:100px;
+}
+
+#chaHu2 a{
+	margin-left:20px;
 }
 
 

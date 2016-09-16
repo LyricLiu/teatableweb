@@ -3,6 +3,12 @@
     var getDesert = false;
     var getChaHu = false;
 
+    var askForTea = document.getElementById('askForTea');
+    var stove = document.getElementById('stove');
+    var teaBox = document.getElementById('teaBox');
+    var chaHu = document.getElementById('chaHu');
+    var warmCup = document.getElementById('warmCup');
+
     var br1 = document.createElement('br');
 var br2 = document.createElement('br');
 
@@ -32,52 +38,58 @@ var br2 = document.createElement('br');
         teaSetBarAl.appendChild(item);
         //teaSetBar.insertBefore(item, div);
     }
-    addItemAl('../item-pic/2.png', 'Cha Hu');
-    addItemAl('../item-pic/1.png', 'Tea Box');
-    addItemAl('../item-pic/5.png', 'Pin Ming Bei');
-    addItemAl('../item-pic/4.png', 'Stove');
-    addItemAl('../item-pic/3.png', 'Cha Hai');
+    addItemAl('./item-pic/2.png', 'Cha Hu');
+    addItemAl('./item-pic/1.png', 'Tea Box');
+    addItemAl('./item-pic/5.png', 'Pin Ming Bei');
+    addItemAl('./item-pic/4.png', 'Stove');
+    addItemAl('./item-pic/3.png', 'Cha Hai');
    
 //stove
-   var stoveAdd = document.getElementById('stove-add');
-   var A = document.createElement('a');
-   var B = document.createElement('a');
-   if(getTea == false){
-      A.setAttribute('href', './teaBox.html');
-      A.innerHTML = 'You decide to add some tea leaves.'
-      B.setAttribute('href', '');
-      B.innerHTML = 'You decide to warm the Cha Hu with boiling water.'
-      stoveAdd.appendChild(A);
-      stoveAdd.appendChild(br1);
-      stoveAdd.appendChild(br2);
-      stoveAdd.appendChild(B);
-   }else{
-      A.setAttribute('href', './chaHu.html');
-      A.innerHTML = 'You turn to Cha Hu to brew the tea.'
-      stoveAdd.appendChild(A);
-   }
-
-//cha Hu
-var chaHuAdd = document.getElementById('chaHu-add');
-var T = document.createElement('p');
-var T1 = document.createElement('p');
-var C = document.createElement('a');
-var D = document.createElement('a');
-if(getStove == false){
-  T.innerHTML = "'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step of warm cha Hu.";
-  C.setAttribute('href', './stove.html');
-  C.innerHTML = 'You turn to stove and boil water';
-  chaHuAdd.appendChild(T);
-  chaHuAdd.appendChild(C);
-}else{
-  T.innerHTML = "Then you fill Cha Hu with water from kettle and wash the tea set with the first tea. 'As you see, all my tea sets are pretty small. Following the warming process, the tea inside will remain hot longer as it sits’ you say, ‘and the most important, the warmth of the pot will cause the leaves to release a burst of fragrance.'";
-  T1.innerHTML = "You refill the pot, 'just three minutes, and there will come our first tea.";
-  C.setAttribute('href', '');
-  C.innerHTML = 'Tea is ready, you pour the liquid into Drinking cup.';
-  D.setAttribute('href', '');
-  D.innerHTML = 'Tea is ready, you pour the liquid into Cha Hai.';
-  chaHuAdd.appendChild(T);
-  chaHuAdd.appendChild(T1);
-  chaHuAdd.appendChild(C);
-  chaHuAdd.appendChild(D);
+function stoveAlice(){
+    stove.style.display = "block";
+    askForTea.style.display = "none";
+    chaHu.style.display = "none";
+    var stove1 = document.getElementById('stove1');
+    var stove2 = document.getElementById('stove2');
+    if(getTea == false){
+      stove1.style.display = "block";
+      stove2.style.display = "none";
+    }else{
+      stove2.style.display = "block";
+      stove1.style.display = "none";
+    }
+    getStove = true;
 }
+
+function teaBoxAlice(){
+    stove.style.display = "none";
+    askForTea.style.display = "none";
+    teaBox.style.display = "block";
+    warmCup.style.display = "none";
+    getTea = true;
+}
+
+function chaHuAlice(){
+    stove.style.display = "none";
+    askForTea.style.display = "none";
+    teaBox.style.display = "none";
+    chaHu.style.display = "block";
+    var chaHu1 = document.getElementById('chaHu1');
+    var chaHu2 = document.getElementById('chaHu2');
+    if(getStove == false){
+      chaHu1.style.display = "block";
+      chaHu2.style.display = "none";
+    }else{
+      chaHu2.style.display = "block";
+      chaHu1.style.display = "none";
+    }
+}
+
+function warmCupAlice(){
+    stove.style.display = "none";
+    askForTea.style.display = "none";
+    warmCup.style.display = "block";
+}
+
+
+
