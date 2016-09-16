@@ -8,9 +8,8 @@
     var teaBox = document.getElementById('teaBox');
     var chaHu = document.getElementById('chaHu');
     var warmCup = document.getElementById('warmCup');
+    var chaHai = document.getElementById('chaHai');
 
-    var br1 = document.createElement('br');
-var br2 = document.createElement('br');
 
     var teaSetBar = document.getElementById('add');
     var teaSetBarAl = document.getElementById('alreadyAdd');
@@ -49,14 +48,24 @@ function stoveAlice(){
     stove.style.display = "block";
     askForTea.style.display = "none";
     chaHu.style.display = "none";
+    chaHai.style.display = "none";
     var stove1 = document.getElementById('stove1');
     var stove2 = document.getElementById('stove2');
+    var stove3 = document.getElementById('stove3');
     if(getTea == false){
       stove1.style.display = "block";
       stove2.style.display = "none";
+      stove3.style.display = "none";
     }else{
-      stove2.style.display = "block";
-      stove1.style.display = "none";
+        if(getChaHu == true){
+            stove2.style.display = "block";
+            stove1.style.display = "none";
+            stove3.style.display = "none";
+        }else{
+            stove3.style.display = "block";
+            stove1.style.display = "none";
+            stove2.style.display = "none";
+        }
     }
     getStove = true;
 }
@@ -83,12 +92,30 @@ function chaHuAlice(){
       chaHu2.style.display = "block";
       chaHu1.style.display = "none";
     }
+    getChaHu = true;
 }
 
 function warmCupAlice(){
     stove.style.display = "none";
     askForTea.style.display = "none";
     warmCup.style.display = "block";
+}
+
+function chaHaiAlice(){
+    teaBox.style.display = "none";
+    warmCup.style.display = "none";
+    chaHai.style.display = "block";
+    chaHu.style.display = "none";
+    stove.style.display = "none";
+    var chaHai1 = document.getElementById('chaHai1');
+    var chaHai2 = document.getElementById('chaHai2');
+    if(getStove == true){
+      chaHai1.style.display = "block";
+      chaHai2.style.display = "none";
+    }else{
+      chaHai2.style.display = "block";
+      chaHai1.style.display = "none";
+    }
 }
 
 

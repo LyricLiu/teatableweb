@@ -29,6 +29,10 @@ body{
 	display: none;
 }
 
+#stove3{
+	display: none;
+}
+
 #teaBox{
 	display:none;
 }
@@ -49,12 +53,16 @@ body{
 	display: none;
 }
 
+#chaHai{
+	display:none;
+}
 
 a{
 	color:#525775;
 	text-decoration: none;
 	background-color: #ebe7df;
 	padding:7px;
+	cursor: pointer;
 }
 
 a:hover{
@@ -171,6 +179,10 @@ section{
 }
 .dtext p{
 	width:calc(100% - 600px);
+}
+
+.etext {
+	margin-top: 100px;
 }
 
 #chaHu1 p{

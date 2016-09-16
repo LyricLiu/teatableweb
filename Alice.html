@@ -44,6 +44,9 @@
             <div id="stove2">
                 <a onClick = "chaHuAlice()">You turn to Cha Hu to brew the tea.</a>
             </div>
+            <div id="stove3">
+                <a onClick = "chaHaiAlice()">You turn to Cha Hai to brew the tea.</a>
+            </div>
         </div>
         <div class="bigImage bimg">
             <img src="./img/stove.png">
@@ -65,7 +68,7 @@
             <p>You open the green tea box and pick a spoon of tea out.</p>
             <div>
                 <a onClick = "chaHuAlice()">You add some tea leaves to Cha Hu</a><br><br>
-                <a >You add some tea leaves to Cha Hai</a>
+                <a onClick = "chaHaiAlice()">You add some tea leaves to Cha Hai</a>
             </div>
         </div>
     </section>
@@ -100,15 +103,39 @@
     <div id="warmCup">
         <section>
         <div class="bigImage">
-            <img src="./img/teaBox.png">
+            <img src="./img/warmCup.png">
         </div>
-        <div class="Text ctext">
+        <div class="Text etext">
             <p>You pour the boilding water into Cha Hu.</p>
             <p>‘Why you warm the teapot and cup?’ Alice ask.</p>
             <p>‘Oh, the warmth of the pot will cause the leaves to release a burst of fragrance. It's a critical step to brew the tea.’</p>
             <div>
                 <a onClick = "teaBoxAlice()">You reply while turn to tea box.</a>
             </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="chaHai">
+        <section>
+        <div class="bigImage">
+            <img src="./img/chaHai.png">
+        </div>
+        <div class="Text etext">
+            <div id="chaHai1">
+                <p>You pour the first liquid into a vessel and carefully shake it.</p>
+                <p>‘What's this call?’ Alice ask.</p>
+                 <p>‘This vessel calls Cha Hai. If you pour tea directly from pot to cups, each cup of tea will have a slightly different strength.’ you told Alice.</p>
+                <p>'But you shack it and each cup comes the same.'</p>
+                <div>
+                     <a onClick="pinMingBeiAlice()">You pour the liquid into Pin Ming Bei.</a>
+                </div>
+            </div>
+            <div id="chaHai2">
+                <p>'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step to warm the teapot.'</p>
+                <a onClick = "stoveAlice()">You turn to stove and boil water</a>
+            </div>
+            
         </div>
     </section>
     </div>
