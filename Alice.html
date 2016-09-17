@@ -108,7 +108,7 @@
         <div class="Text etext">
             <p>You pour the boilding water into Cha Hu.</p>
             <p>‘Why you warm the teapot and cup?’ Alice ask.</p>
-            <p>‘Oh, the warmth of the pot will cause the leaves to release a burst of fragrance. It's a critical step to brew the tea.’</p>
+            <p>‘Oh, the warmth of the pot will cause the leaves to release a burst of fragrance. It's a critical step to brew the tea.’</p><br>
             <div>
                 <a onClick = "teaBoxAlice()">You reply while turn to tea box.</a>
             </div>
@@ -126,13 +126,13 @@
                 <p>You pour the first liquid into a vessel and carefully shake it.</p>
                 <p>‘What's this call?’ Alice ask.</p>
                  <p>‘This vessel calls Cha Hai. If you pour tea directly from pot to cups, each cup of tea will have a slightly different strength.’ you told Alice.</p>
-                <p>'But you shack it and each cup comes the same.'</p>
+                <p>'But you shack it and each cup comes the same.'</p><br>
                 <div>
                      <a onClick="pinMingBeiAlice()">You pour the liquid into Pin Ming Bei.</a>
                 </div>
             </div>
             <div id="chaHai2">
-                <p>'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step to warm the teapot.'</p>
+                <p>'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step to warm the teapot.'</p><br><br>
                 <a onClick = "stoveAlice()">You turn to stove and boil water</a>
             </div>
         </div>
@@ -146,7 +146,7 @@
         </div>
         <div class="Text etext">
                 <p>'You can taste it now' You pose a friendly gesture.</p>
-                <p>‘Wow, I just recognized how complicated it is to cook a tea. I often disappointed by the result when I brew tea leaves in an oversized pot using water heated to boiling. I really appreciate your tea knowledge.’ Alice say while lift the Pin Ming Bei and sip a tea.</p>
+                <p>‘Wow, I just recognized how complicated it is to cook a tea. I often disappointed by the result when I brew tea leaves in an oversized pot using water heated to boiling. I really appreciate your tea knowledge.’ Alice say while lift the Pin Ming Bei and sip a tea.</p><br>
                 <div>
                      <a onClick="rewardAlice()">Ask her about the taste of your tea.</a><br><br>
                      <a onClick="checkAlice()">Check the process to make sure you did right.</a>
@@ -178,7 +178,10 @@
 
     <div id="check">
         <h1>Your process is:</h1>
-        <div id="yourProcess"></div>
+        <div id="yourProcess"></div><br>
+        <div>
+            <a onClick="backAlice()">Go back and serve other guests</a>
+        </div>
     </div>
     
     <aside>

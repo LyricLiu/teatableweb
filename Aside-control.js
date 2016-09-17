@@ -1,6 +1,5 @@
     var getTea = false;
     var getStove = false;
-    var getDesert = false;
     var getChaHu = false;
 
     var process = [];
@@ -173,6 +172,17 @@ function checkAlice(){
         yourProcess.appendChild(T);
         yourProcess.appendChild(T1);
     }
+}
+
+function backAlice(){
+    check.style.display = "none";
+    askForTea.style.display = "block";
+    getTea = false;
+    getStove = false;
+    getChaHu = false;
+
+    process = [];
+    yourProcess.innerHTML = '';
 }
 
 
