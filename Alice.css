@@ -57,6 +57,18 @@ body{
 	display:none;
 }
 
+#pinMingBei{
+	display:none;
+}
+
+#reward{
+	display:none;
+}
+
+#check{
+	display:none;
+}
+
 a{
 	color:#525775;
 	text-decoration: none;
@@ -97,6 +109,8 @@ aside p{
 
 #click-item{
 	text-decoration: underline;
+	background-color: #ebe7df;
+	padding:3px;
 	color:#584764;
 	font-size: 20px;
 	cursor:pointer;
@@ -198,6 +212,14 @@ section{
 	margin-left:20px;
 }
 
+#check{
+	margin:40px;
+	width:800px;
+}
+
+#yourProcess p{
+	margin:20px;
+}
 
 
 
