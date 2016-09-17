@@ -69,6 +69,96 @@ body{
 	display:none;
 }
 
+.Text p:nth-child(1) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    opacity: 0;
+}
+
+.Text p:nth-child(2) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.Text p:nth-child(3) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.Text p:nth-child(4) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+.Text p:nth-child(5) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+.Text p:nth-child(6) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.Text p:nth-child(7) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.8s;
+    opacity: 0;
+}
+
+.Text p:nth-child(7) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 2.1s;
+    opacity: 0;
+}
+
+.Text p:nth-child(8) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+.Text a{
+	animation: come-in 1s ease-in forwards;
+    animation-delay: 2.2s;
+    opacity: 0;
+}
+
+@keyframes come-in{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+ }
+
+
+@keyframes fade-in{
+  from {
+    padding-top: 20px;
+    opacity: 0;
+  }
+
+  to {
+    padding-top: 0;
+    opacity: 1;
+  }
+ }
+
 a{
 	color:#525775;
 	text-decoration: none;
