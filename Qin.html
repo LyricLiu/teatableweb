@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qin</title>
+    <link rel="stylesheet" type="text/css" href="Alice.css">
+</head>
+<body>
+    <div id="askForTea">
+        <section>
+            <div class="bigImage">
+            <img src="./img/Qin.png">
+            </div>
+            <div class="Text">
+                <p>A Chinese young lady sit down with a warm smile, 'nice to meet you. I am Qin.'</p>
+                <p>She is beautiful with her slim figure dressed in a deconstructed embroider cheongsam. Her black hair is drawn into a tight bun.</p>
+                <p>'Nice to meet you, first time here?' you ask.</p>
+                <p>'Um, I say yes.' she smile, 'I am pretty interested in health issues and recently my work refers to Chinese Tea. I want to enrich my tea experience. That's why I come here.'</p>
+                <p>'Welcome, could you tell me more about your work.' you ask.</p>
+                <p>'Definitely' Qin show you a <label id="click-item" onClick = "addItem('./item-pic/11.png', 'Tea Book')">bamboo slip</label>, ‘Oh, I have an excellent brochure for you. It documents the whole knowledge you need to prepare the best and unique tea for different people!’</p>
+                <br><br>
+                <a onClick = "teaBookQin()">'Oh, it's interesting.' you open it and read.</a>
+                <br>
+                <br>
+                <a onClick = "chooseTeaQin()">'Thanks' you say, 'how about a cup of tea first.'</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="teaBook">
+        <section>
+        <div class="bigImage">
+            <img src="./img/teaBook.png">
+        </div>
+        <div class="Text ctext">
+            <p>You open the tea book and read:</p>
+            <p>- Green tea is the most popular tea in China with hundreds of varieties are available. Long Jing tea is one of the most popular green tea. The leaves are usually medium to dark green, and the liquid ranges in color across shades of yellow and light green. It refers to unoxidized tea. Green tea has detoxification effect...</p>
+            <p>- Oolong tea refers to semi-oxidized tea. The color of leaves is extremely diverse, from green to red. And the liquid ranges from yellow to brown. Oolong tea has a refreshing effect and it also helps digestion...</p>
+            <p>- Red tea oxidized completely and this process turns the leaves dark red or jet black. They produce the rich red liquid. Red tea has a rich mellow flavor an it is strong enough to brew in a larger vessel. Drinking red tea is good for stomach...</p><br>
+            <div>
+                <a onClick = "chooseTeaQin()">You finish your reading and decide to prepare tea for Qin.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="chooseTea">
+        <section>
+        <p>'Let me choose a tea for you' you smile to Qin and select:</p>
+        <div class="chooseImg">
+            <img onClick="choosePuer()" src="./img/puer.png">
+            <img onClick="chooseLongJin()" src="./img/longjin.png">
+            <img onClick="chooseOolong()" src="./img/oolongbox.png">
+        </div>
+    </section>
+    </div>
+
+    <div id="placeLeaves">
+        <section>
+        <div class="bigImage">
+            <img id="water1" src="./img/water1.png">
+            <img id="water2" src="./img/water2.png">
+            <img id="water3" src="./img/water3.png">
+            <img id="water4" src="./img/water4.png">
+        </div>
+        <div class="Text ctext">
+            <p>After you heat the water and warm the pot, you add tea leaves into the pot. Then you fill the pot with water:</p><br><br><br>
+            <label id="click-item" onClick = "water2Qin()">Fill once</label><br><br>
+            <label id="click-item" onClick = "water3Qin()">Fill again</label><br><br>
+            <label id="click-item" onClick = "water4Qin()">One more time</label><br><br><br><br>
+            <a onClick = "finalTeaQin()">Now, Let's brew the tea</a>
+        </div>
+    </section>
+    </div>
+
+    <div id="finalTea">
+        <section>
+        <div class="bigImage">
+            <img id="taste1" src="./img/taste.png">
+            <img id="taste2" src="./img/taste2.png">
+            <img id="taste3" src="./img/taste3.png">
+        </div>
+        <div class="Text ctext">
+            <p>You fill the cup with tea and ask Qin to taste.</p>
+            <p>'Thanks' Qin attentively sip the brew, contemplating the various component flavors and taste the liquid in different parts of the mouth.</p>
+            <p id="Qinsay"></p>
+            <p>'Before I leave I can show you a beautiful tea set' Qin smile, 'You could even buy it if you like.'</p><br>
+            <div>
+                <a onClick = "newSetQin()">'Of course, I'd like to have a look at it!' you say</a><br><br>
+                <a href="./test.html">Thank her, say goodbye to her and serve another guest.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="newSet">
+        <section>
+        <div class="bigImage">
+            <img src="./img/newSet.png">
+        </div>
+        <div class="Text ctext">
+            <div>
+                <p>Qin show you an exquisite teapot which is made of white clay. You noticed the special design of the handle, and really fall in love with it.</p>
+                <p>'I will <label id="click-item" onClick = "addItem('./item-pic/12.png', 'New Cha Hu')">buy it</label>' you say,'It is really a treasure.'</p>
+                <p>'I bet you love it.' Alice smile, 'I discover this in an ancient bookstore, the store owner told me it has more than five-hundred-year history.'</p>
+                <p>You pay for it, thanks Qin and carefully collect your new tea set.</p>
+                <p>'Well, it's time to leave' Qin stands up and say goodbye to you.</p>
+            </div><br>
+            <div>
+                <a href="./test.html">Serve another guest.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+<aside>
+        <h1>Your Tea Sets:</h1>
+        <div id="add">
+        </div>
+        <div id="alreadyAdd"></div>
+        <div id="checkProcess"></div>
+    </aside>
+     <script type="text/javascript" src="./Aside-control.js"></script>
+</body>
+</html>

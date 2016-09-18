@@ -103,6 +103,52 @@ body{
 	display:none;
 }
 
+
+/*Qin*/
+
+#teaBook{
+	display:none;
+}
+
+#chooseTea{
+	display:none;
+}
+
+#placeLeaves{
+	display:none;
+}
+
+#water2{
+	display:none;
+}
+
+#water3{
+	display:none;
+}
+
+#water4{
+	display:none;
+}
+
+#taste1{
+	display:none;
+}
+
+#taste2{
+	display:none;
+}
+
+#taste3{
+	display:none;
+}
+
+#finalTea{
+	display: none;
+}
+
+#newSet{
+	display: none;
+}
 /*******************/
 .Text p:nth-child(1) {
     animation: fade-in 1s ease-in forwards;
@@ -365,5 +411,26 @@ section{
 	cursor:pointer;
 }
 
+
+#chooseTea p{margin:80px 80px;}
+#chooseTea img{margin-left: 60px;}
+
+#chooseTea img:hover{
+	transform: scale(1.02, 1.02);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+#placeLeaves p{
+	margin: 80px 100px 0 0;
+}
+#placeLeaves img{
+	margin: 90px 60px;
+}
+
+#placeLeaves label{
+	margin-left: 60px;
+	padding:5px;
+}
 
 

@@ -23,6 +23,12 @@
     var drink = document.getElementById('drink');
     var teaPet = document.getElementById('teaPet');
 
+    //Qin
+    var teaBook = document.getElementById('teaBook');
+    var chooseTea = document.getElementById('chooseTea');
+    var placeLeaves = document.getElementById('placeLeaves');
+    var finalTea = document.getElementById('finalTea');
+    var newSet = document.getElementById('newSet');
 
     var teaSetBar = document.getElementById('add');
     var teaSetBarAl = document.getElementById('alreadyAdd');
@@ -243,3 +249,102 @@
         drink.style.display = "none";
         teaPet.style.display = "block";
     }
+
+//qin 
+function teaBookQin() {
+        askForTea.style.display = "none";
+        teaBook.style.display = "block";
+    }
+
+function chooseTeaQin() {
+        askForTea.style.display = "none";
+        teaBook.style.display = "none";
+        chooseTea.style.display = "block";
+    }
+
+var chooseWhat = '';
+
+function choosePuer(){
+        chooseTea.style.display = "none";
+        placeLeaves.style.display = "block";
+        chooseWhat = "Puer";
+}
+
+function chooseLongJin(){
+        chooseTea.style.display = "none";
+        placeLeaves.style.display = "block";
+        chooseWhat = "LongJin";
+}
+
+function chooseOolong(){
+        chooseTea.style.display = "none";
+        placeLeaves.style.display = "block";
+        chooseWhat = "Oolong";
+}
+
+var water1 = document.getElementById('water1');
+var water2 = document.getElementById('water2');
+var water3 = document.getElementById('water3');
+var water4 = document.getElementById('water4');
+
+var waterWhat = '';
+
+function water2Qin(){
+        water1.style.display = "none";
+        water2.style.display = "block";
+        water3.style.display = "none";
+        water4.style.display = "none";
+        waterWhat = 'small';
+
+}
+
+function water3Qin(){
+        water1.style.display = "none";
+        water2.style.display = "none";
+        water3.style.display = "block";
+        water4.style.display = "none";
+        waterWhat = 'medium';
+
+}
+
+function water4Qin(){
+        water1.style.display = "none";
+        water2.style.display = "none";
+        water3.style.display = "none";
+        water4.style.display = "block";
+        waterWhat = 'large';
+
+}
+
+var taste1 = document.getElementById('taste1');
+var taste2 = document.getElementById('taste2');
+var taste3 = document.getElementById('taste3');
+var Qinsay = document.getElementById('Qinsay');
+
+
+function finalTeaQin(){
+    placeLeaves.style.display = "none";
+    finalTea.style.display = "block";
+    if(chooseWhat == "Puer"){
+        taste3.style.display = "block";
+    }else if(chooseWhat == "LongJin"){
+        taste1.style.display = "block";
+    }else{
+        taste2.style.display = "block";
+    }
+
+    if(waterWhat == 'medium'){
+        Qinsay.innerHTML = "'I love this taste' she say, 'you are a master of tea.'";
+    }else if(waterWhat == 'large'){
+        Qinsay.innerHTML = "'I love this tea' she say, 'But it's a little bit light. I think it would be better if you add less water.";
+    }else{
+        Qinsay.innerHTML = "'I love this tea' she say, 'But the taste is a little bit heavy. I think it would be better if you add more water to brew it.";
+    }
+}
+
+function newSetQin(){
+        finalTea.style.display = "none";
+        newSet.style.display = "block";
+}
+
+
