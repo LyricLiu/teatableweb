@@ -18,6 +18,8 @@
     //Li
     var oolong = document.getElementById('oolong');
     var brewTea = document.getElementById('brewTea');
+    var shelf = document.getElementById('shelf');
+    var taste = document.getElementById('taste');
 
 
     var teaSetBar = document.getElementById('add');
@@ -201,4 +203,31 @@
         askForTea.style.display = "none";
         oolong.style.display = "none";
         brewTea.style.display = "block";
+    }
+
+    function shelfLi() {
+        brewTea.style.display = "none";
+        shelf.style.display = "block";
+    }
+
+    var haveWen = false;
+    function editWen(){
+        haveWen = true;
+    }
+
+    var taste1 = document.getElementById('taste1');
+    var taste2 = document.getElementById('taste2');
+
+    function tasteLi() {
+        shelf.style.display = "none";
+        brewTea.style.display = "none";
+        taste.style.display = "block";
+        if(haveWen == true){
+            taste2.style.display = "block";
+            taste1.style.display = "none";
+        }else{
+            taste1.style.display = "block";
+            taste2.style.display = "none";
+        }
+
     }

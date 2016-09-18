@@ -34,7 +34,7 @@
             <p>‘Speak of my journey, I have a gift for you’ Mr. Li said ‘I encounter a very kind tea farmer in a small village on my way. Oh, not a farmer, we should call him tea artist. He lived on the hill and he produces the best oolong in the area there. His tea carries an intense orchid scent. You know why? He neighbored plants with tea! He is a genius in coaxing completely different tastes and aromas!’</p>
             <p>‘You took over the <label id="click-item" onClick = "addItem('./item-pic/7.png', 'Oolong Tea')">oolong Tea</label>, unwrap it and smell. ‘What a unique aroma, it must be a best oolong tea I have ever seen in the world. The tea artist should take enormous pride of it. Thanks, Mr. Li.’</p>
             <p>‘Oh, I am very happy you like it.’ Mr. Li say.</p>
-            <p>'How about we taste it right now' you suggest, 'I cannot wait to try this special oolong tea.'</p>
+            <p>'How about we taste it right now' you suggest, 'I cannot wait to try this special oolong tea.'</p><br>
             <div>
                 <a onClick = "brewTeaLi()">You take some oolong leaves out and decide to brew it.</a>
             </div>
@@ -55,11 +55,54 @@
                 <a onClick = "tasteLi()">You decide to fill Pin Ming Bei with the tea.</a>
                 <br>
                 <br>
-                <a onClick = "WenXiangBeiLi()">You decide to look into your vessel shelf.</a>
+                <a onClick = "shelfLi()">You decide to look into your vessel shelf.</a>
             </div>
         </div>
         <div class="bigImage bimg">
             <img src="./img/stove.png">
+        </div>
+    </section>
+    </div>
+
+        <div id="shelf">
+        <section>
+        <div class="bigImage">
+            <img src="./img/shelf.png">
+            <img id="shelf1" onClick = "addItem('./item-pic/9.png', 'Wen Xiang Bei');editWen()" src="./img/shelf1.png">
+            <img id="shelf2" onClick = "addItem('./item-pic/8.png', 'Wine')" src="./img/shelf2.png">
+        </div>
+        <div class="Text ctext">
+        	<br><br>
+            <p>You turn to a three-layer antique sandalwood shelf which is used to storage your tea sets.</p>
+            <p>'Let me find a vessel for Mr. Li. He is pretty mean to tea.' you think while search through the shelf. </p>
+            <br><br>
+            <div>
+                <a onClick = "tasteLi()">Go back to serve Mr. Li.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="taste">
+        <section>
+        <div class="bigImage">
+            <img src="./img/taste.png">
+        </div>
+        <div class="Text ctext">
+            <div id="taste1">
+            	<p>‘Fine tea resists easy appreciation. I am surprised to find you don’t have a Wen Xiang Bei (sniffing cup)!’ Mr. Li say, ‘buddy, you must have this.’</p>
+            	<p>Mr. Li come up with a delicate box from his bag and open it. Two exquisite tall and narrow <label id="click-item" onClick = "addItem('./item-pic/9.png', 'Wen Xiang Bei')">Wen Xiang Bei</label> are lain there. </p>
+            	<p>Mr. Li take over the pot from your hand and fill the Wen Xiang Bei with tea. He fills the Wen Xiang Bei with tea water, and then pour it from the sniffing cups into the drinking cups. Then put his nose inside the mouth of the empty sniffing cup and inhale.</p>
+            	<p>‘Oh, it is extremely pleasurable’ Mr. Li squeeze his eyes, ‘you could sniff the cup immediately and again about 30 seconds later.’</p>
+            </div>
+            <div id="taste2">
+            	<p>‘Fine tea resists easy appreciation. I am gald to find you have Wen Xiang Bei (sniffing cup) here!’ Mr. Li say.</p>
+            	<p>Mr. Li take over the pot from your hand and fill the Wen Xiang Bei with tea. He fills the Wen Xiang Bei with tea water, and then pour it from the sniffing cups into the drinking cups. Then put his nose inside the mouth of the empty sniffing cup and inhale.</p>
+            	<p>‘Oh, it is extremely pleasurable’ Mr. Li squeeze his eyes, ‘you could sniff the cup immediately and again about 30 seconds later.’</p>
+            </div>
+            <div>
+                <a onClick = "drinkLi()">After that, you fill Pin Ming Bei with liquid.</a>
+            </div>
         </div>
     </section>
     </div>

@@ -79,7 +79,23 @@ body{
 	display:none;
 }
 
+#shelf{
+	display:none;
+}
 
+#taste{
+	display:none;
+}
+
+#taste1{
+	display:none;
+}
+
+#taste2{
+	display:none;
+}
+
+/*******************/
 .Text p:nth-child(1) {
     animation: fade-in 1s ease-in forwards;
     transform: translateY(1em);
@@ -320,6 +336,25 @@ section{
 
 #yourProcess p{
 	margin:20px;
+}
+
+/*************************/
+
+.bigImage{overflow: hidden;}
+#shelf1{
+	float:left;
+	position: absolute;
+	top: 290px;
+	left:150px;
+	cursor:pointer;
+}
+
+#shelf2{
+	float:left;
+	position: absolute;
+	top:480px;
+	left:390px;
+	cursor:pointer;
 }
 
 
