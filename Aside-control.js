@@ -20,6 +20,8 @@
     var brewTea = document.getElementById('brewTea');
     var shelf = document.getElementById('shelf');
     var taste = document.getElementById('taste');
+    var drink = document.getElementById('drink');
+    var teaPet = document.getElementById('teaPet');
 
 
     var teaSetBar = document.getElementById('add');
@@ -230,4 +232,14 @@
             taste2.style.display = "none";
         }
 
+    }
+
+    function drinkLi() {
+        taste.style.display = "none";
+        drink.style.display = "block";
+    }
+
+    function teaPetLi() {
+        drink.style.display = "none";
+        teaPet.style.display = "block";
     }

@@ -95,6 +95,14 @@ body{
 	display:none;
 }
 
+#drink{
+	display:none;
+}
+
+#teaPet{
+	display:none;
+}
+
 /*******************/
 .Text p:nth-child(1) {
     animation: fade-in 1s ease-in forwards;
