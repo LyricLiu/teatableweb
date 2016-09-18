@@ -1,0 +1,436 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: Calibri;
+	font-size: 20px;
+	background-color: #dad4c5;
+	display: flex;
+    height: 100%;
+    min-width: 1100px;
+    color:#5d5d5d;
+}
+
+
+#askForTea{
+	display:block;
+}
+
+#stove{
+	display: none;
+}
+
+#stove1{
+	display: none;
+}
+
+#stove2{
+	display: none;
+}
+
+#stove3{
+	display: none;
+}
+
+#teaBox{
+	display:none;
+}
+
+#chaHu{
+	display:none;
+}
+
+#chaHu1{
+	display:none;
+}
+
+#chaHu2{
+	display:none;
+}
+
+#warmCup{
+	display: none;
+}
+
+#chaHai{
+	display:none;
+}
+
+#pinMingBei{
+	display:none;
+}
+
+#reward{
+	display:none;
+}
+
+#check{
+	display:none;
+}
+
+/* Li */
+#oolong{
+	display:none;
+}
+
+#brewTea{
+	display:none;
+}
+
+#shelf{
+	display:none;
+}
+
+#taste{
+	display:none;
+}
+
+#taste1{
+	display:none;
+}
+
+#taste2{
+	display:none;
+}
+
+#drink{
+	display:none;
+}
+
+#teaPet{
+	display:none;
+}
+
+
+/*Qin*/
+
+#teaBook{
+	display:none;
+}
+
+#chooseTea{
+	display:none;
+}
+
+#placeLeaves{
+	display:none;
+}
+
+#water2{
+	display:none;
+}
+
+#water3{
+	display:none;
+}
+
+#water4{
+	display:none;
+}
+
+#taste1{
+	display:none;
+}
+
+#taste2{
+	display:none;
+}
+
+#taste3{
+	display:none;
+}
+
+#finalTea{
+	display: none;
+}
+
+#newSet{
+	display: none;
+}
+/*******************/
+.Text p:nth-child(1) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    opacity: 0;
+}
+
+.Text p:nth-child(2) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.Text p:nth-child(3) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.Text p:nth-child(4) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+.Text p:nth-child(5) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+.Text p:nth-child(6) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.Text p:nth-child(7) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 1.8s;
+    opacity: 0;
+}
+
+.Text p:nth-child(7) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 2.1s;
+    opacity: 0;
+}
+
+.Text p:nth-child(8) {
+    animation: fade-in 1s ease-in forwards;
+    transform: translateY(1em);
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+.Text a{
+	animation: come-in 1s ease-in forwards;
+    animation-delay: 2.2s;
+    opacity: 0;
+}
+
+@keyframes come-in{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+ }
+
+
+@keyframes fade-in{
+  from {
+    padding-top: 20px;
+    opacity: 0;
+  }
+
+  to {
+    padding-top: 0;
+    opacity: 1;
+  }
+ }
+
+a{
+	color:#525775;
+	text-decoration: none;
+	background-color: #ebe7df;
+	padding:7px;
+	cursor: pointer;
+}
+
+a:hover{
+	background-color: #bfac9e;
+}
+
+aside{
+	width:180px;
+	float:right;
+	position: absolute;
+	right:0;
+	height:auto;
+	border-left: 3px solid #525775;
+	background-color: #ebe7df;
+}
+
+aside h1 {
+	padding:15px 13px 15px 10px;
+	font-family: Copperplate Gothic Bold;
+	font-size: 19px; 
+	margin-bottom: 10px;
+	position: fixed;
+	border-bottom: 3px solid #9d8790;
+	background-color: #ebe7df;
+
+}
+
+aside p{
+	font-family:Berlin Sans FB;
+	margin:10px 10px;
+}
+
+#click-item{
+	text-decoration: underline;
+	background-color: #ebe7df;
+	padding:3px;
+	color:#584764;
+	font-size: 20px;
+	cursor:pointer;
+}
+
+#add{
+	text-align: center;
+	margin-top:65px;
+}
+
+#alreadyAdd{
+	text-align: center;
+}
+
+section{
+	float:left;
+	width:calc(100% - 180px);
+	height:100%;
+	position:fixed;
+}
+
+.Text{
+	margin:30px 10px;
+}
+
+.Text p{
+	margin-bottom: 20px;
+	margin-left:20px;
+}
+
+.Text div{
+	margin-top:40px;
+}
+.btext div a{
+	margin:0px 20px;
+}
+
+.btext{
+	float:left;
+}
+.btext p{
+	width:calc(100% - 350px);
+}
+
+.btext :nth-child(2){
+	width:calc(100% - 450px);
+}
+
+.btext :nth-child(3){
+	width:calc(100% - 500px);
+}
+.btext :nth-child(4){
+	width:calc(100% - 530px);
+}
+.btext :nth-child(5){
+	width:calc(100% - 600px);
+}
+.bigImage{
+	float:left;
+}
+
+.btext{
+	padding-top:30px;
+	font-size: 18px;
+}
+
+
+.bimg{
+	position: fixed;
+	right:180px;
+}
+
+.ctext{
+	margin-right:50px;
+	margin-top:50px;
+}
+
+.dtext{
+	float:left;
+}
+.dtext p{
+	width:calc(100% - 600px);
+}
+
+.etext {
+	margin-top: 100px;
+}
+
+#chaHu1 p{
+	width:500px;
+	margin-left:100px;
+	margin-top: 200px;
+}
+#chaHu1 a{
+	margin-left:100px;
+}
+
+#chaHu2 a{
+	margin-left:20px;
+}
+
+#check{
+	margin:40px;
+	width:800px;
+}
+
+#yourProcess p{
+	margin:20px;
+}
+
+/*************************/
+
+.bigImage{overflow: hidden;}
+#shelf1{
+	float:left;
+	position: absolute;
+	top: 290px;
+	left:150px;
+	cursor:pointer;
+}
+
+#shelf2{
+	float:left;
+	position: absolute;
+	top:480px;
+	left:390px;
+	cursor:pointer;
+}
+
+
+#chooseTea p{margin:80px 80px;}
+#chooseTea img{margin-left: 60px;}
+
+#chooseTea img:hover{
+	transform: scale(1.02, 1.02);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+#placeLeaves p{
+	margin: 80px 100px 0 0;
+}
+#placeLeaves img{
+	margin: 90px 60px;
+}
+
+#placeLeaves label{
+	margin-left: 60px;
+	padding:5px;
+}
+
+

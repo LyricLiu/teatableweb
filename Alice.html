@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alice</title>
+    <link rel="stylesheet" type="text/css" href="Alice.css">
+</head>
+<body>
+    <div id="askForTea">
+        <section>
+            <div class="bigImage">
+            <img src="./img/alice.png">
+            </div>
+            <div class="Text">
+                <p>A young lady sit down with a warm smile, 'nice to meet you. I am Alice.'</p>
+                <p>She has light yellow hair and beautiful hands with long fingers. Her blue eyes not far off the colour of the sea itself. She wears a traditional blue skirt with embrodidered white sleves which makes her pretty elegent.</p>
+                <p>'Nice to meet you, what kind of tea do you want to taste?' you ask.</p>
+                <p>'Um, actually I have no idea.' Alice look at you with her blue eyes, 'Its my first time to teashop, do you have any recommendation?'</p>
+                <p>'Alright, my lady', you say 'let me prepare the best tea in my shop for you.'</p>
+                <br>
+                <a onClick = "stoveAlice()">You turn to the stove to heat the water.</a>
+                <br>
+                <br>
+                <a onClick = "teaBoxAlice()">You turn to the tea box to get some tea leaves.</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="stove">
+        <section>
+        <div class="Text btext">
+            <p>You fill a pottery kattle with well water and gently place it on the heating stove.'Just a couple minutes, madam' you say.</p>
+            <p>'Nevermind' Alice smile with his eye fixed on the kattle,'What an exquisite kattle, where did you get it?'</p>
+            <p>'Oh, I got it in a very small village in Sichuan. It's a fantastic journey. You know, Chinese tea is mostly small-scale village handicraft. So during the tea harvest. I went to a village which is famous for Puer to get some best tea. For I helped farmers select and pinch off tea leaves, they brought me to their house to experience the process of tea make. And it was then, an antique kettle caught my eye. And I bought it from farmer's hand. He told me his father left this kettle for him.' you said.</p>
+            <p>'You are so lucky! I was wondering where to find such a classic style kettle' she said, 'by the way, I am very curious about the tea make, could you tell me more about it?'</p>
+            <p>'Actually, they heated tea leaves with charcoal in fiery woks and then vigilantly tended piles of oxidizing leaves. They told me they need periodical heated these leaves and make them dry', you say 'oops, it’s boiling now.'</p>
+            <div id="stove1">
+                <a onClick = "teaBoxAlice()">You decide to add some tea leaves.</a>
+                <br>
+                <br>
+                <a onClick = "warmCupAlice()">You decide to warm the Cha Hu with boiling water.</a>
+            </div>
+            <div id="stove2">
+                <a onClick = "chaHuAlice()">You turn to Cha Hu to brew the tea.</a>
+            </div>
+            <div id="stove3">
+                <a onClick = "chaHaiAlice()">You turn to Cha Hai to brew the tea.</a>
+            </div>
+        </div>
+        <div class="bigImage bimg">
+            <img src="./img/stove.png">
+        </div>
+    </section>
+    </div>
+
+    <div id="teaBox">
+        <section>
+        <div class="bigImage">
+            <img src="./img/teaBox.png">
+        </div>
+        <div class="Text ctext">
+            <p>'What do you drink at home?' you ask.</p>
+            <p>‘We have wine in my hometown, we taste it and share it with our friends. We see it as a necessary component of the good life.’ Alice say.</p>
+            <p>‘Oh, tea offers all the advantages of wine while based solely on the appreciation. You know, the effective of alcohol impair your concentration when you sip a wine. But all you enjoy is flavor and aroma when you taste tea.’ You explain.</p>
+            <p>‘And... no one questions the health benefits of tea-drinking.’ You process with a smile.</p>
+            <p>‘It’s true’ Alice reply.</p>
+            <p>You open the green tea box and pick a spoon of tea out.</p>
+            <div>
+                <a onClick = "chaHuAlice()">You add some tea leaves to Cha Hu</a><br><br>
+                <a onClick = "chaHaiAlice()">You add some tea leaves to Cha Hai</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="chaHu">
+        <section>
+        <div class="Text dtext">
+            <div id="chaHu1">
+                <p>'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step to warm the teapot.'</p><br><br>
+                <a onClick = "stoveAlice()">You turn to stove and boil water</a>
+            </div>
+            <div id = "chaHu2">
+                <p>‘You know the golden rule of tea drinking is very simple, the smaller the pot, the better the tea. So you see here is a very small purple sand clay pot. I got this in Yixing which is a historic city in the Yangtze River basin long famous for its ceramics.’You say while carefully place some tea leaves in the Cha Hu.</p>
+                <p>‘Yes, this is fantastic. But wait, it seems no glaze on it.’ Alice reply.</p>
+                <p>‘You are right. This purple sand clay is so pleasant to touch that the pot does not need a glaze.’</p>
+                <p>'Oh, it's interesting.' Alice touch the Cha Hu with her slender fingers.</p>
+                <p>Then you fill Cha Hu with water from kettle and wash the tea set with the first tea. 'As you see, all my tea sets are pretty small. Following the warming process, the tea inside will remain hot longer as it sits’</p>
+                <p>You refill the pot, 'just three minutes, and there will come our first tea.'</p><br>
+                <a onClick = "pinMingBeiAlice()">Tea is ready, you pour the liquid into Drinking cup.</a>
+                <br>
+                <br>
+                <a onClick = "chaHaiAlice()">Tea is ready, you pour the liquid into Cha Hai.</a>
+            </div>
+        </div>
+        <div class="bigImage bimg">
+            <img src="./img/chaHu.png">
+        </div>
+    </section>
+    </div>
+
+    <div id="warmCup">
+        <section>
+        <div class="bigImage">
+            <img src="./img/warmCup.png">
+        </div>
+        <div class="Text etext">
+            <p>You pour the boilding water into Cha Hu.</p>
+            <p>‘Why you warm the teapot and cup?’ Alice ask.</p>
+            <p>‘Oh, the warmth of the pot will cause the leaves to release a burst of fragrance. It's a critical step to brew the tea.’</p><br>
+            <div>
+                <a onClick = "teaBoxAlice()">You reply while turn to tea box.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="chaHai">
+        <section>
+        <div class="bigImage">
+            <img src="./img/chaHai.png">
+        </div>
+        <div class="Text etext">
+            <div id="chaHai1">
+                <p>You pour the first liquid into a vessel and carefully shake it.</p>
+                <p>‘What's this call?’ Alice ask.</p>
+                 <p>‘This vessel calls Cha Hai. If you pour tea directly from pot to cups, each cup of tea will have a slightly different strength.’ you told Alice.</p>
+                <p>'But you shack it and each cup comes the same.'</p><br>
+                <div>
+                     <a onClick="pinMingBeiAlice()">You pour the liquid into Pin Ming Bei.</a>
+                </div>
+            </div>
+            <div id="chaHai2">
+                <p>'Almost forgotten, I should boil water first.' you say,'I apologize it, I miss the step to warm the teapot.'</p><br><br>
+                <a onClick = "stoveAlice()">You turn to stove and boil water</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="pinMingBei">
+        <section>
+        <div class="bigImage">
+            <img src="./img/pinMingBei.png">
+        </div>
+        <div class="Text etext">
+                <p>'You can taste it now' You pose a friendly gesture.</p>
+                <p>‘Wow, I just recognized how complicated it is to cook a tea. I often disappointed by the result when I brew tea leaves in an oversized pot using water heated to boiling. I really appreciate your tea knowledge.’ Alice say while lift the Pin Ming Bei and sip a tea.</p><br>
+                <div>
+                     <a onClick="rewardAlice()">Ask her about the taste of your tea.</a><br><br>
+                     <a onClick="checkAlice()">Check the process to make sure you did right.</a>
+                </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="reward">
+        <section>
+        <div class="bigImage">
+            <img src="./img/desert.png">
+        </div>
+        <div class="Text ctext">
+            <p>'Do you like the tea?' you ask with a smile. </p>
+            <p> 'Definitely! It smells good and taste a little bit bitter but I like this savor. I am wondering it would be better if we have some desserts.' Alice reply. </p>
+            <p>'You are right' you say, 'the problem is I have no idea how to cook desserts.' </p>
+            <p>'No, you should not worry about that', Alice get two traditional Chinese <label id="click-item" onClick = "addItem('./item-pic/6.png', 'Desserts')">desserts</label> out of her bag, 'I just bought these before I come to your teashop, we could share them.'</p>
+            <p>'Oh, thanks!' you say. </p>
+            <p> ‘I have a question.’ Alice ask while cipping the tea, ‘what is good tea?’ </p>
+            <p>'Well, that's a good question' you reply, 'I think the answer is quiet simple’ you explain, ‘it should be memorable. If you are still thinking about it after you finish drinking it. It must be pretty good.' </p>
+            <p>'It's truely memorable! I mean, it's the best tea I ever have!'</p>
+            <div>
+                <a onClick="checkAlice()">'Thanks for your appreciation, let me check my process.'you reply.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="check">
+        <h1>Your process is:</h1>
+        <div id="yourProcess"></div><br>
+        <div>
+            <a onClick="backAlice()">Go back and serve Alice once more.</a><br><br>
+            <a href="./test.html">Go back and serve other guests</a>
+        </div>
+    </div>
+    
+    <aside>
+        <h1>Your Tea Sets:</h1>
+        <div id="add">
+        </div>
+        <div id="alreadyAdd"></div>
+        <div id="checkProcess"></div>
+    </aside>
+     <script type="text/javascript" src="./Aside-control.js"></script>
+</body>
+
+</html>
