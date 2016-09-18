@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="Alice.css">
+</head>
+<body>
+	<div id="askForTea">
+        <section>
+            <div class="bigImage">
+            <img src="./img/li.png">
+            </div>
+            <div class="Text">
+                <p>'Long time no see' you welcome Mr. Li, 'How's it going?'</p>
+                <p>'Pretty good' Mr. Li sit down and put his bag and hat aside, 'I traded thirty pieces of hand-made embroidery silk from south of Yangtze river all the way north and reached central plain. That took me a long time in the journey. But anyway, I survived and come yo your teashop.'</p>
+                <p>'Well，welcome home and welcome to my teashop, my old friend' you smile.</p>
+                <p>Mr. Li laugh while tap the wooden teatable with his finger, 'I definitely missed your tea.'</p>
+                <br><br>
+                <a onClick = "brewTeaLi()">'Well, how about a cup of your favorate oolong tea?' you ask.</a>
+                <br>
+                <br>
+                <a onClick = "oolongLi()">'Tell me about your journey, anything interesting?'you ask.</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="oolong">
+        <section>
+        <div class="bigImage">
+            <img src="./img/oolong.png">
+        </div>
+        <div class="Text ctext">
+            <p>‘Speak of my journey, I have a gift for you’ Mr. Li said ‘I encounter a very kind tea farmer in a small village on my way. Oh, not a farmer, we should call him tea artist. He lived on the hill and he produces the best oolong in the area there. His tea carries an intense orchid scent. You know why? He neighbored plants with tea! He is a genius in coaxing completely different tastes and aromas!’</p>
+            <p>‘You took over the <label id="click-item" onClick = "addItem('./item-pic/7.png', 'Oolong Tea')">oolong Tea</label>, unwrap it and smell. ‘What a unique aroma, it must be a best oolong tea I have ever seen in the world. The tea artist should take enormous pride of it. Thanks, Mr. Li.’</p>
+            <p>‘Oh, I am very happy you like it.’ Mr. Li say.</p>
+            <p>'How about we taste it right now' you suggest, 'I cannot wait to try this special oolong tea.'</p>
+            <div>
+                <a onClick = "brewTeaLi()">You take some oolong leaves out and decide to brew it.</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div id="brewTea">
+        <section>
+        <div class="Text btext">
+            <p>After you warm the cup, you refill a pottery kattle with well water and gently place it on the heating stove.'Just a couple minutes, sir' you say.</p>
+            <p>And then you place the tea leaves in the Cha Hu and decide to cover the lid.</p>
+            <p>‘Hang on!' Mr. Li stop you' We should appreciate the aroma of these dry leaves. Be quiet, smell it and savor the moment.’ Mr. Li say with his eyes closed.</p>
+            <p>'Oops, it's boiling now' you get the kettle out of heating stove quickly, and decide to pour boiling water into Cha Hu.</p>
+            <p>'Wait, wait!' Mr.Li stop you once again,'you cannot brew tea with boiling water.' He proceed ‘excessively hot water will cause the tea to release objectionable flavors. The ideal water temperature is when the water about to boil. I assume it might be 85-90℃.’</p>
+            <p>'Well, you are right' you agree with Mr.Li. three minutes later, the tea is ready.</p>
+            <div>
+                <a onClick = "tasteLi()">You decide to fill Pin Ming Bei with the tea.</a>
+                <br>
+                <br>
+                <a onClick = "WenXiangBeiLi()">You decide to look into your vessel shelf.</a>
+            </div>
+        </div>
+        <div class="bigImage bimg">
+            <img src="./img/stove.png">
+        </div>
+    </section>
+    </div>
+
+
+
+	    <aside>
+        <h1>Your Tea Sets:</h1>
+        <div id="add">
+        </div>
+        <div id="alreadyAdd"></div>
+        <div id="checkProcess"></div>
+    </aside>
+     <script type="text/javascript" src="./Aside-control.js"></script>
+</body>
+</html>

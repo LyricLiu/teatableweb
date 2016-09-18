@@ -13,6 +13,7 @@ body{
     color:#5d5d5d;
 }
 
+
 #askForTea{
 	display:block;
 }
@@ -68,6 +69,16 @@ body{
 #check{
 	display:none;
 }
+
+/* Li */
+#oolong{
+	display:none;
+}
+
+#brewTea{
+	display:none;
+}
+
 
 .Text p:nth-child(1) {
     animation: fade-in 1s ease-in forwards;
