@@ -22,20 +22,26 @@ p {
     display: flex;
 }
 
-#teapic a {
+.main-enterance {
     display: block;
     width: 241px;
     height: 241px;
-    background: url(./img/startbutton1.png) no-repeat center;
     background-size: 239px;
     margin: auto;
     transition: transform 0.5s;
 }
 
-#teapic a:hover {
+.main-enterance div {
+    width: 241px;
+    height: 241px;
+    background: url(./img/startbutton1.png) no-repeat center;
+    transition: transform .5s ease-in-out, background 0s linear .25s;
+}
+
+.main-enterance:hover div {
     background: url(./img/startbutton2.png) no-repeat center;
     transform: rotateX(180deg);
-    transition: transform 0.5s;
+    transition: transform .5s ease-in-out, background 0s linear .25s;
 }
 
 a {
@@ -48,11 +54,13 @@ section {
     font-size: 20px;
     font-family: Calibri;
     top: 610px;
-    margin-left:12px;
-
+    margin-left: 12px;
 }
 
 p {
     color: #c1ac9e;
 }
-#small{font-size: 16px;}
+
+#small {
+    font-size: 16px;
+}
