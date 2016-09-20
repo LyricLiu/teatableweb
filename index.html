@@ -8,9 +8,12 @@
 </head>
 
 <body>
+    <audio controls preload="auto" id="startMusic" hidden="true">
+    <source src="./audio/start.wav" controls></source>
+    </audio>
     <embed src="./audio/Qin.mp3" autostart="true" hidden="true" loop="1" volume="100" />
     <div id="teapic">
-        <a href="./test.html" class="main-enterance">
+        <a href="./test.html" class="main-enterance" onmouseover="Music()">
             <div></div>
         </a>
         <section>
@@ -18,6 +21,12 @@
             <p>Yichi (Lyric) Liu | lyricliu@gatech.edu | LIU TWINE EXERCISE </p>
         </section>
     </div>
+    <script type="text/javascript">
+        function Music(){
+            var music = document.getElementById("startMusic");
+            music.play();
+        }
+    </script>
 
 </body>
 

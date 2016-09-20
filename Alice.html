@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="Alice.css">
 </head>
 <body>
+    <audio controls preload="auto" id="stoveMusic" hidden="true">
+    <source src="./audio/stove.mp3" controls></source></audio>
+    <audio controls preload="auto" id="cupMusic" hidden="true">
+    <source src="./audio/fillCup.mp3" controls></source></audio>
+    <audio controls preload="auto" id="potMusic" hidden="true">
+    <source src="./audio/fillPot.mp3" controls></source>
+    </audio>
     <embed src="./audio/Alice.mp3" autostart="true" hidden="true" loop="1" volume="50" />
     <div id="askForTea">
         <section>
@@ -20,7 +27,7 @@
                 <p>'Um, actually I have no idea.' Alice look at you with her blue eyes, 'Its my first time to teashop, do you have any recommendation?'</p>
                 <p>'Alright, my lady', you say 'let me prepare the best tea in my shop for you.'</p>
                 <br>
-                <a onClick = "stoveAlice()">You turn to the stove to heat the water.</a>
+                <a onClick = "stoveAlice();musicPlay('potMusic')">You turn to the stove to heat the water.</a>
                 <br>
                 <br>
                 <a onClick = "teaBoxAlice()">You turn to the tea box to get some tea leaves.</a>
@@ -89,10 +96,10 @@
                 <p>'Oh, it's interesting.' Alice touch the Cha Hu with her slender fingers.</p>
                 <p>Then you fill Cha Hu with water from kettle and wash the tea set with the first tea. 'As you see, all my tea sets are pretty small. Following the warming process, the tea inside will remain hot longer as it sits’</p>
                 <p>You refill the pot, 'just three minutes, and there will come our first tea.'</p><br>
-                <a onClick = "pinMingBeiAlice()">Tea is ready, you pour the liquid into Drinking cup.</a>
+                <a onClick = "pinMingBeiAlice();musicPlay('cupMusic')">Tea is ready, you pour the liquid into Drinking cup.</a>
                 <br>
                 <br>
-                <a onClick = "chaHaiAlice()">Tea is ready, you pour the liquid into Cha Hai.</a>
+                <a onClick = "chaHaiAlice();musicPlay('cupMusic')">Tea is ready, you pour the liquid into Cha Hai.</a>
             </div>
         </div>
         <div class="bigImage bimg">
@@ -129,7 +136,7 @@
                  <p>‘This vessel calls Cha Hai. If you pour tea directly from pot to cups, each cup of tea will have a slightly different strength.’ you told Alice.</p>
                 <p>'But you shack it and each cup comes the same.'</p><br>
                 <div>
-                     <a onClick="pinMingBeiAlice()">You pour the liquid into Pin Ming Bei.</a>
+                     <a onClick="pinMingBeiAlice();musicPlay('cupMusic')">You pour the liquid into Pin Ming Bei.</a>
                 </div>
             </div>
             <div id="chaHai2">
@@ -193,7 +200,8 @@
         <div id="alreadyAdd"></div>
         <div id="checkProcess"></div>
     </aside>
-     <script type="text/javascript" src="./Aside-control.js"></script>
+     <script type="text/javascript" src="./Aside-control.js">
+     </script>
 </body>
 
 </html>

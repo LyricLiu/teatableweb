@@ -6,6 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="Alice.css">
 </head>
 <body>
+    <audio controls preload="auto" id="cupMusic" hidden="true">
+    <source src="./audio/fillCup.mp3" controls></source></audio>
+    <audio controls preload="auto" id="potMusic" hidden="true">
+    <source src="./audio/fillPot.mp3" controls></source>
+    </audio>
     <embed src="./audio/Li.mp3" autostart="true" hidden="true" loop="1" volume="50" />
 	<div id="askForTea">
         <section>
@@ -18,7 +23,7 @@
                 <p>'Well，welcome home and welcome to my teashop, my old friend' you smile.</p>
                 <p>Mr. Li laugh while tap the wooden teatable with his finger, 'I definitely missed your tea.'</p>
                 <br><br>
-                <a onClick = "brewTeaLi()">'Well, how about a cup of your favorate oolong tea?' you ask.</a>
+                <a onClick = "brewTeaLi();musicPlay('potMusic')">'Well, how about a cup of your favorate oolong tea?' you ask.</a>
                 <br>
                 <br>
                 <a onClick = "oolongLi()">'Tell me about your journey, anything interesting?'you ask.</a>
@@ -53,7 +58,7 @@
             <p>'Wait, wait!' Mr.Li stop you once again,'you cannot brew tea with boiling water.' He proceed ‘excessively hot water will cause the tea to release objectionable flavors. The ideal water temperature is when the water about to boil. I assume it might be 85-90℃.’</p>
             <p>'Well, you are right' you agree with Mr.Li. three minutes later, the tea is ready.</p>
             <div>
-                <a onClick = "tasteLi()">You decide to fill Pin Ming Bei with the tea.</a>
+                <a onClick = "tasteLi();musicPlay('cupMusic')">You decide to fill Pin Ming Bei with the tea.</a>
                 <br>
                 <br>
                 <a onClick = "shelfLi()">You decide to look into your vessel shelf.</a>
@@ -102,7 +107,7 @@
             	<p>‘Oh, it is extremely pleasurable’ Mr. Li squeeze his eyes, ‘you could sniff the cup immediately and again about 30 seconds later.’</p>
             </div>
             <div>
-                <a onClick = "drinkLi()">After that, you fill Pin Ming Bei with liquid.</a>
+                <a onClick = "drinkLi();musicPlay('cupMusic')">After that, you fill Pin Ming Bei with liquid.</a>
             </div>
         </div>
     </section>

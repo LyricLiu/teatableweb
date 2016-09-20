@@ -62,6 +62,11 @@
     addItemAl('./item-pic/4.png', 'Stove');
     addItemAl('./item-pic/3.png', 'Cha Hai');
 
+    function musicPlay(x){
+        var music = document.getElementById(x);
+        music.play();
+    }
+
     //stove
     function stoveAlice() {
         stove.style.display = "block";

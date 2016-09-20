@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" href="Alice.css">
 </head>
 <body>
+    <audio controls preload="auto" id="cupMusic" hidden="true">
+    <source src="./audio/fillCup.mp3" controls></source></audio>
+    <audio controls preload="auto" id="potMusic" hidden="true">
+    <source src="./audio/fillPot.mp3" controls></source>
+    </audio>
     <embed src="./audio/Qin.mp3" autostart="true" hidden="true" loop="1" volume="50" />
     <div id="askForTea">
         <section>
@@ -67,10 +72,10 @@
         </div>
         <div class="Text ctext">
             <p>After you heat the water and warm the pot, you add tea leaves into the pot. Then you fill the pot with water:</p><br><br><br>
-            <label id="click-item" onClick = "water2Qin()">Fill once</label><br><br>
-            <label id="click-item" onClick = "water3Qin()">Fill again</label><br><br>
-            <label id="click-item" onClick = "water4Qin()">One more time</label><br><br><br><br>
-            <a onClick = "finalTeaQin()">Now, Let's brew the tea</a>
+            <label id="click-item" onClick = "water2Qin();musicPlay('cupMusic')">Fill once</label><br><br>
+            <label id="click-item" onClick = "water3Qin();musicPlay('cupMusic')">Fill again</label><br><br>
+            <label id="click-item" onClick = "water4Qin();musicPlay('cupMusic')">One more time</label><br><br><br><br>
+            <a onClick = "finalTeaQin();musicPlay('potMusic')">Now, Let's brew the tea</a>
         </div>
     </section>
     </div>
