@@ -108,15 +108,16 @@
         <div class="Text ctext">
             <div>
                 <p>Qin show you an exquisite teapot which is made of white clay. You noticed the special design of the handle, and really fall in love with it.</p>
-                <p>'I will <label id="click-item" onClick = "addItem('./item-pic/12.png', 'New Cha Hu')">buy it</label>' you say,'It is really a treasure.'</p>
-                <p>'I bet you love it.' Alice smile, 'I discover this in an ancient bookstore, the store owner told me it has more than five-hundred-year history.'</p>
-                <p>You pay for it, thanks Qin and carefully collect your new tea set.</p>
-                <p>'Well, it's time to leave' Qin stands up and say goodbye to you.</p>
+                <p>Please enter how much you would pay for it:</p>
             </div><br>
+        </div>
+        <textarea id="enter" type="text" placeholder="1-100"></textarea>
+                <button onClick="buyJudge()">Submit</button>
+                <span id="buyIt1">'Well, deal! here is your <label id="click-item" onClick = "addItem('./item-pic/12.png', 'New Cha Hu')">tea set</label>' Qin hand the teapot to you and leave.</span><br><br>
+                <span id="buyIt2">'Sorry, I think I want to keep it, It's time to say goodbye' Qin leave.</span><br><br>
             <div>
                 <a href="./test.html">Serve another guest.</a>
             </div>
-        </div>
     </section>
     </div>
 
@@ -128,6 +129,7 @@
         <div id="alreadyAdd"></div>
         <div id="checkProcess"></div>
     </aside>
-     <script type="text/javascript" src="./Aside-control.js"></script>
+     <script type="text/javascript" src="./Aside-control.js">
+     </script>
 </body>
 </html>

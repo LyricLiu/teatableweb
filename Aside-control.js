@@ -62,7 +62,7 @@
     addItemAl('./item-pic/4.png', 'Stove');
     addItemAl('./item-pic/3.png', 'Cha Hai');
 
-    function musicPlay(x){
+    function musicPlay(x) {
         var music = document.getElementById(x);
         music.play();
     }
@@ -207,12 +207,12 @@
     }
 
     //Li
-     function oolongLi() {
+    function oolongLi() {
         askForTea.style.display = "none";
         oolong.style.display = "block";
     }
 
-     function brewTeaLi() {
+    function brewTeaLi() {
         askForTea.style.display = "none";
         oolong.style.display = "none";
         brewTea.style.display = "block";
@@ -224,7 +224,8 @@
     }
 
     var haveWen = false;
-    function editWen(){
+
+    function editWen() {
         haveWen = true;
     }
 
@@ -235,10 +236,10 @@
         shelf.style.display = "none";
         brewTea.style.display = "none";
         taste.style.display = "block";
-        if(haveWen == true){
+        if (haveWen == true) {
             taste2.style.display = "block";
             taste1.style.display = "none";
-        }else{
+        } else {
             taste1.style.display = "block";
             taste2.style.display = "none";
         }
@@ -255,101 +256,114 @@
         teaPet.style.display = "block";
     }
 
-//qin 
-function teaBookQin() {
+    //qin 
+    function teaBookQin() {
         askForTea.style.display = "none";
         teaBook.style.display = "block";
     }
 
-function chooseTeaQin() {
+    function chooseTeaQin() {
         askForTea.style.display = "none";
         teaBook.style.display = "none";
         chooseTea.style.display = "block";
     }
 
-var chooseWhat = '';
+    var chooseWhat = '';
 
-function choosePuer(){
+    function choosePuer() {
         chooseTea.style.display = "none";
         placeLeaves.style.display = "block";
         chooseWhat = "Puer";
-}
+    }
 
-function chooseLongJin(){
+    function chooseLongJin() {
         chooseTea.style.display = "none";
         placeLeaves.style.display = "block";
         chooseWhat = "LongJin";
-}
+    }
 
-function chooseOolong(){
+    function chooseOolong() {
         chooseTea.style.display = "none";
         placeLeaves.style.display = "block";
         chooseWhat = "Oolong";
-}
+    }
 
-var water1 = document.getElementById('water1');
-var water2 = document.getElementById('water2');
-var water3 = document.getElementById('water3');
-var water4 = document.getElementById('water4');
+    var water1 = document.getElementById('water1');
+    var water2 = document.getElementById('water2');
+    var water3 = document.getElementById('water3');
+    var water4 = document.getElementById('water4');
 
-var waterWhat = '';
+    var waterWhat = '';
 
-function water2Qin(){
+    function water2Qin() {
         water1.style.display = "none";
         water2.style.display = "block";
         water3.style.display = "none";
         water4.style.display = "none";
         waterWhat = 'small';
 
-}
+    }
 
-function water3Qin(){
+    function water3Qin() {
         water1.style.display = "none";
         water2.style.display = "none";
         water3.style.display = "block";
         water4.style.display = "none";
         waterWhat = 'medium';
 
-}
+    }
 
-function water4Qin(){
+    function water4Qin() {
         water1.style.display = "none";
         water2.style.display = "none";
         water3.style.display = "none";
         water4.style.display = "block";
         waterWhat = 'large';
 
-}
-
-var taste1 = document.getElementById('taste1');
-var taste2 = document.getElementById('taste2');
-var taste3 = document.getElementById('taste3');
-var Qinsay = document.getElementById('Qinsay');
-
-
-function finalTeaQin(){
-    placeLeaves.style.display = "none";
-    finalTea.style.display = "block";
-    if(chooseWhat == "Puer"){
-        taste3.style.display = "block";
-    }else if(chooseWhat == "LongJin"){
-        taste1.style.display = "block";
-    }else{
-        taste2.style.display = "block";
     }
 
-    if(waterWhat == 'medium'){
-        Qinsay.innerHTML = "'I love this taste' she say, 'you are a master of tea.'";
-    }else if(waterWhat == 'large'){
-        Qinsay.innerHTML = "'I love this tea' she say, 'But it's a little bit light. I think it would be better if you add less water.";
-    }else{
-        Qinsay.innerHTML = "'I love this tea' she say, 'But the taste is a little bit heavy. I think it would be better if you add more water to brew it.";
-    }
-}
+    var taste1 = document.getElementById('taste1');
+    var taste2 = document.getElementById('taste2');
+    var taste3 = document.getElementById('taste3');
+    var Qinsay = document.getElementById('Qinsay');
 
-function newSetQin(){
+
+    function finalTeaQin() {
+        placeLeaves.style.display = "none";
+        finalTea.style.display = "block";
+        if (chooseWhat == "Puer") {
+            taste3.style.display = "block";
+        } else if (chooseWhat == "LongJin") {
+            taste1.style.display = "block";
+        } else {
+            taste2.style.display = "block";
+        }
+
+        if (waterWhat == 'medium') {
+            Qinsay.innerHTML = "'I love this taste' she say, 'you are a master of tea.'";
+        } else if (waterWhat == 'large') {
+            Qinsay.innerHTML = "'I love this tea' she say, 'But it's a little bit light. I think it would be better if you add less water.";
+        } else {
+            Qinsay.innerHTML = "'I love this tea' she say, 'But the taste is a little bit heavy. I think it would be better if you add more water to brew it.";
+        }
+    }
+
+    function newSetQin() {
         finalTea.style.display = "none";
         newSet.style.display = "block";
-}
+    }
 
 
+    function buyJudge() {
+        var buyTea = document.getElementById('enter').value;
+        var BuyIt = parseInt(buyTea);
+        var buyIt1 = document.getElementById('buyIt1');
+        var buyIt2 = document.getElementById('buyIt2');
+        if (BuyIt > 50) {
+            buyIt1.style.display = "block";
+            buyIt2.style.display = "none";
+        } else {
+            buyIt2.style.display = "block";
+            buyIt1.style.display = "none";
+        }
+    }

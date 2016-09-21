@@ -149,6 +149,13 @@ body{
 #newSet{
 	display: none;
 }
+
+#buyIt1{
+	display: none;
+}
+#buyIt2{
+	display: none;
+}
 /*******************/
 .Text p:nth-child(1) {
     animation: fade-in 1s ease-in forwards;
@@ -431,6 +438,24 @@ section{
 #placeLeaves label{
 	margin-left: 60px;
 	padding:5px;
+}
+
+#enter{
+	border:1px solid #bfac9e;
+	background-color:#ebe7df;
+	width:300px;
+	height:30px;
+	outline: none;
+	font-size: 16px;
+}
+
+button{
+	padding:5px;
+	font-size: 16px;
+	border:none;
+	background-color: #bfac9e;
+	margin: 20px 0;
+	outline: none;
 }
 
 
